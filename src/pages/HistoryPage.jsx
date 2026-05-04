@@ -15,7 +15,7 @@ export default function HistoryPage() {
 
   const fetchLaporan = async () => {
     try {
-      const res = await api.get("/laporan/my");
+      const res = await api.get("/api/laporan/my");
       setData(res.data);
     } catch (err) {
       console.error(err);

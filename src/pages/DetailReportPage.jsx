@@ -15,7 +15,7 @@ export default function DetailReportPage() {
 
   const fetchDetail = async () => {
     try {
-      const res = await api.get(`/laporan/${id}`);
+      const res = await api.get(`/api/laporan/${id}`);
       setLaporan(res.data);
     } catch (err) {
       console.error(err);

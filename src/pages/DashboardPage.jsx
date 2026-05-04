@@ -22,7 +22,7 @@ export default function Dashboard() {
 
   const fetchData = async () => {
   try {
-    const laporanRes = await api.get("/laporan/my");
+    const laporanRes = await api.get("/api/laporan/my");
     const semua = laporanRes.data;
     
     setLaporan(semua.slice(0, 4));
